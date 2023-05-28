@@ -1,6 +1,6 @@
 import React from 'react';
-import './Home.css'; // Import the CSS file
-import Books from './Books'
+import './Home.css';
+import Books from "../HomePage/Books"
 const Home = () => {
   return (
     <div>

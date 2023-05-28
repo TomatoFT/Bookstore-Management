@@ -6,11 +6,12 @@ import Login from './components/Authentication/Login';
 import Register from './components/Authentication/Register';
 import Logout from './components/Authentication/Logout';
 import Import from './components/Admin/Import';
-import Home from './components/HomePage/Home';
 import Footer from './components/HomePage/Footer';
+import WelcomePage from './components/WelcomePage/welcome';
+import AdminPage from './components/Admin/AdminPage';
+import Home from './components/Customer/Home';
 
 import './App.css'
-import './components/HomePage/Home.css'
 
 const App = () => {
   return (
@@ -24,7 +25,7 @@ const App = () => {
         <nav className='navbar'>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">WelcomePage</Link>
             </li>
             <li>
               <Link to="/login">Login</Link>
@@ -44,9 +45,11 @@ const App = () => {
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<WelcomePage />} />
           <Route path="/logout" element={<Logout />} />
-          <Route path="/import" element={<Import />} />
+          <Route path="/import" element={<Import />}/>
+          <Route path='/adminPage' element={<AdminPage />}/>
+          <Route path='/customerPage' element={<Home />}/>
 
         </Routes>
         <Footer />

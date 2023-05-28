@@ -1,0 +1,32 @@
+.admin-page {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  h1, h2, p {
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  li:before {
+    content: "• ";
+  }
+  
+  li:first-child:before {
+    content: none;
+  }
+  
+  
